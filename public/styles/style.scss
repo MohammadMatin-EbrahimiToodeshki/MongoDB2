@@ -21,4 +21,52 @@ th {
     background-color: #f2f2f2;
 }
 
-/* Add more styles as needed */
+/* public/styles/style.scss */
+.report-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.report {
+    text-align: center;
+    color: #333333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+}
+
+/* Optional: Add some responsiveness */
+@media screen and (max-width: 600px) {
+    table {
+        border: 1px solid #dddddd;
+    }
+
+    th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #dddddd;
+    }
+}

@@ -1,0 +1,125 @@
+/* public/styles/style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Updated to column direction */
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 20px; /* Add margin at the top for better spacing */
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px; /* Add margin at the bottom for better spacing */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+button {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.container {
+    text-align: center;
+}
+
+.hh1 {
+    color: #3498db; /* Header color */
+}
+
+a {
+    color: #2980b9; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #21618c; /* Hover color */
+}
+
+.report-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.report {
+    text-align: center;
+    color: #333333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    th, td {
+        border: 1px solid #3498db; /* Change the border color here */
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+}
+
+/* Optional: Add some responsiveness */
+@media screen and (max-width: 600px) {
+    table {
+        border: 1px solid #3498db; /* Change the border color here */
+    }
+
+    th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #3498db; /* Change the border color here */
+    }
+}

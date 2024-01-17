@@ -1,14 +1,37 @@
-<!-- views/database-report.ejs -->
+<!-- database-report.ejs -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Database Report</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Database Report</title>
+  <link rel="stylesheet" href="/styles/style.css"> <!-- Adjust the path as needed -->
 </head>
 <body>
-    <h1>Database Report</h1>
-    <!-- Add React-Table component to display paginated and styled table -->
-    <!-- Make sure to include the required scripts and styles for React-Table -->
+  <div class="report-container">
+    <h1 class="report">Database Report</h1>
+  
+  <% if (form && form.length > 0) { %>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+      <% form.forEach(user => { %>
+        <tr>
+          <td><%= user.name %></td>
+          <td><%= user.email %></td>
+        </tr>
+      <% }); %>
+    </table>
+  <% } else { %>
+    <p>No data available.</p>
+  <% } %>
+  </div>
+
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/react-table@7/dist/react-table.min.js"></script>
 </body>
 </html>

@@ -5,11 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Information Form</title>
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
     <h1>Enter Information</h1>
     <form action="/submit-information" method="post">
         <!-- Add form fields for user input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
         <button type="submit">Submit</button>
     </form>
 </body>
